@@ -5,6 +5,12 @@ for x in range(i):
   tdarr.append([])
   for y in range(j):
     tdarr[x].append(int(input('Enter the element:')))
+
+for x in range(i):
+  for y in range(j):
+    print(tdarr[x][y],end=' ')
+  print()
+
 k=int(input('Enter the element to be searched:'))
 for i in range(len(tdarr)):
   for j in range(len(tdarr[i])):
@@ -24,7 +30,7 @@ def isSymmetric(tdarr):
       if tdarr[i][j]!=tdarr[j][i]:
         return False
   return True
-isSymmetric(tdarr)
+print(isSymmetric(tdarr))
 
 def isSkewSymmetric(tdarr):
   for i in range(len(tdarr)):
@@ -32,5 +38,5 @@ def isSkewSymmetric(tdarr):
       if tdarr[i][j]!=-tdarr[j][i]:
         return False
   return True
-isSkewSymmetric(tdarr)
+print(isSkewSymmetric(tdarr))
 
