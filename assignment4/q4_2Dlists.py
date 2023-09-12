@@ -15,7 +15,7 @@ k=int(input('Enter the element to be searched:'))
 for i in range(len(tdarr)):
   for j in range(len(tdarr[i])):
     if tdarr[i][j]==k:
-      print('Element found at [{},{}]'.format(i,j))
+      print('Element found at [{},{}]'.format(i+1,j+1))
 
 i=int(input('Enter the number of rows:'))
 tdarr=[] 
