@@ -1,14 +1,20 @@
-a = input('q1 part a input (integer): ')
-def fib(n):
-  if n < 0:
-    print("Incorrect input")
-  elif n == 0:
-    return 0
-  elif n == 1:
-    return 1
-  else:
-    return fib(n - 1) + fib(n - 2)
-print(fib(int(a)))
+a = int(input('q1 part a input (integer): '))
+# fibonacci series
+a1=0
+a2=1
+if a==1:
+  print(a1)
+elif a==2:
+  print(a1)
+  print(a2)
+else:
+  print(a1)
+  print(a2)
+  for i in range(3,int(a+1)):
+    c=a1+a2
+    print(c)
+    a1=a2
+    a2=c
 
 n = input('q1 part b input  list length (integer): ')
 arr = []

@@ -21,7 +21,7 @@ print('min',min(c))
 d=input('q2 part d input (list)(comma seperated):')
 d=[int(i) for i in d.split(',')]
 try:
-  print(d.index((input('q2 part d input (int):'))))
+  print(d.index((int(input('q2 part d input (int):')))))
 except ValueError:
   print(-1)
 
