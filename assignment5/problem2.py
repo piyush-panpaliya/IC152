@@ -43,3 +43,9 @@ def k(x):
   return kDict[x]
 k(9)
 showPlot(kDict)
+
+#================= extra ==================
+eDict={}
+for i in range(1,21):
+  eDict[i]=i**2
+showPlot(eDict)
