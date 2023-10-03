@@ -27,11 +27,11 @@ xValues = np.array(xValues)
 mNum = n*np.sum(xValues*yValues) - np.sum(xValues)*np.sum(yValues)
 mDen = n*np.sum(xValues*xValues) - np.sum(xValues)*np.sum(xValues)
 mEst = mNum/mDen
-print(xValues*yValues)
 
 # Estimating c
 # write formulae for c below:-
-cEst = (sum(yValues) - m*sum(xValues))/n
+# cEst = np.sum(yValues)*(np.sum(xValues)**2)-np.sum(xValues*yValues)*np.sum(yValues)
+cEst = (np.sum(yValues) - mEst*np.sum(xValues))/n
 print(cEst)
 
 # dropping outlier/last element (100,10000) only in the view to zoomin:-
