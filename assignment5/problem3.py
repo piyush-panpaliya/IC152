@@ -17,3 +17,21 @@ def scatSubStr(w,s):
     return False
 
 print(scatSubStr("abb","cadbebb"))
+
+# ================ extra 3 ==================
+ans=0
+def scatSubStr2(s,p=0):
+  global ans
+  if len(w) == p:
+    ans+=1
+    p=0
+  if len(s) == 0:
+    return ans
+  if w[p] in s:
+    return scatSubStr2(s.replace(w[p],'',1),p+1)
+  else:
+    return ans
+
+w="abb"
+s="abbbadb"
+print(scatSubStr2(s))

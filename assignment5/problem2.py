@@ -44,7 +44,11 @@ def k(x):
 k(9)
 showPlot(kDict)
 
-#================= extra ==================
+for i in [['f',fDict],['g',gDict],['h',hDict],['k',kDict]]:
+  plt.scatter(i[1].keys(),i[1].values(),label=i[0])
+plt.legend()
+plt.show()
+#================= extra q2 ==================
 eDict={}
 for i in range(1,21):
   eDict[i]=i**2

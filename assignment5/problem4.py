@@ -30,7 +30,6 @@ mEst = mNum/mDen
 
 # Estimating c
 # write formulae for c below:-
-# cEst = np.sum(yValues)*(np.sum(xValues)**2)-np.sum(xValues*yValues)*np.sum(yValues)
 cEst = (np.sum(yValues) - mEst*np.sum(xValues))/n
 print(cEst)
 

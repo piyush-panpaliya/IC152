@@ -1,5 +1,6 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
+import numpy as np
 def readData():
   csvData = pd.read_csv('data.csv',sep=',') 
   csvDataNum = csvData[['State','A','B','C','D','E','F','G','H','I','J','K']].to_numpy()
@@ -67,3 +68,18 @@ plt.show()
 data.sort_values(by=['D'], inplace=True)
 data.plot.bar(x='State',y=['E'])
 plt.show()
+
+
+# =========extra 1 ==========
+x=data['K']
+y=data['I'] 
+xAvg=np.mean(x)
+yAvg=np.mean(y)
+r=np.sum((x-xAvg)*(y-yAvg))/np.power(np.sum(np.power((x-xAvg),2))*np.sum(np.power((y-yAvg),2)),0.5)
+print(r)
+if r>0:
+  print('yes increasing women in workforce increases per capita income')
+elif r<0:
+  print('no increasing women workforce does not increase per capita income')
+else:
+  print('no correlation')
