@@ -30,7 +30,11 @@ def lowest(data):
 
 def median(data):
   data.sort(key=lambda x: x[1])
-  return data[len(data)//2][1]
+  n=len(data)
+  if n%2==0:
+    return (data[n//2][1]+data[(n//2)-1][1])/2
+  else:
+    return data[len(data)//2-1][1]
 
 def average(data):
   sum = 0
@@ -39,13 +43,17 @@ def average(data):
   return sum/len(data)
 
 def mode(data):
-  mode = {}
+  mode=[]
+  c=0
   for i in data:
-    if i[1] in mode:
-      mode[i[1]] += 1
-    else:
-      mode[i[1]] = 1
-  return list(mode.keys())[list(mode.values()).index(max(list(mode.values())))]
+    if data.count(i)>c:
+      c=data.count(i)
+      mode=[i]
+    elif data.count(i)==c:
+      mode.append(i)
+    print(mode)
+  return mode
+
 
 dataToPrint=[['population density',6],['percentage of marginal farmers',7],['percentage of women in the overall workforce',11]]
 for i in dataToPrint:
