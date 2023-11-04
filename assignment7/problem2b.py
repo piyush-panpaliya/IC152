@@ -13,9 +13,18 @@ def makeMatrix(file):
   return np.array(m)
 
 
-def writeToFile(ans):
-  with open('problem2aOp.txt', 'w') as f:
-    f.write(str(ans))
+def calc(detA, dets, infinite, mA, mB):
+  lines = ['3 1\n']
+  if (not infinite):
+    for det in dets:
+      lines.append(str(float(det / detA)) + '\n')
+  else:
+    z = mA[0, 0] + mA[0, 1] - mB[0]
+    lines.append('1\n')
+    lines.append('1\n')
+    lines.append(str(z[0]))
+  with open('problem2bOp.txt', 'w') as f:
+    f.writelines(lines)
 
 
 def main():
@@ -29,16 +38,16 @@ def main():
   mB = makeMatrix(fB)
   detA = np.linalg.det(mA)
   if (detA != 0):
-    return writeToFile('Unique solution')
+    return calc(detA, dets, False, mA, mB)
   dets = []
   for i in range(3):
     mAX = mA.copy()
     mAX[:, i] = mB[:, 0]
     dets.append(np.linalg.det(mAX))
   if (dets[0] == 0 and dets[1] == 0 and dets[2] == 0):
-    return writeToFile('Infinite solutions')
+    return calc(detA, dets, True, mA, mB)
   else:
-    return writeToFile('No solution')
+    return
 
 
 main()

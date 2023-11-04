@@ -28,7 +28,8 @@ def getfrequency(outcomes, n):
 def plot(relative_frequencies, n):
   for i in range(4):
     plt.plot(range(1, n + 1), relative_frequencies[i],
-             label='Relative Frequency', color=colors[i])
+             label=i, color=colors[i])
+    plt.legend(loc='upper right')
   plt.savefig('problem3a_' + str(n) + '.png')
   # plt.show()
   plt.close()
