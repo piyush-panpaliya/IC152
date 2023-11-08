@@ -23,7 +23,6 @@ def checkFor(target, listToCheck):
 
 def checkBS(target, listToCheck, index):
   i = len(listToCheck) // 2
-  print(listToCheck, index, i)
   if listToCheck[i] == target:
     return index + i
   if len(listToCheck) == 1:
@@ -39,14 +38,14 @@ def main():
     sys.exit(1)
   target, listToCheck = read(sys.argv[1:][0])
 
-  startFor = time.process_time()
+  startFor = time.time()
   checkFor(target, listToCheck)
-  endFor = time.process_time()
+  endFor = time.time()
   print('for loop time', endFor - startFor)
 
-  startBS = time.process_time()
+  startBS = time.time()
   checkBS(target, listToCheck, 0)
-  endBS = time.process_time()
+  endBS = time.time()
   print('binary search time', endBS - startBS)
 
 

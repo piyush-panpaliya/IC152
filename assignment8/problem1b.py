@@ -26,7 +26,7 @@ def circle(size, centre=0, boundary=128):
   histList = []
   for i in range(size):
     for j in range(size):
-      if kernel_2D[i, j] <= 255:
+      if kernel_2D[i, j] < 255:
         histList.append(kernel_2D[i, j])
 
   # begining a subplot with 1 row and 2 columns
@@ -46,7 +46,7 @@ def circle(size, centre=0, boundary=128):
   plt.xlabel("grayscale value")
   plt.ylabel("pixel count")
   plt.grid(True)
-  plt.xlim((0.0, 250.0))  # <- named arguments do not work here
+  # plt.xlim((0.0, 250.0))  # <- named arguments do not work here
   plt.hist(histList, bins=boundary // 2 + 1, color='#0504aa',
            alpha=0.7, rwidth=0.6, align='mid', density=True)
   plt.tight_layout()
@@ -55,6 +55,7 @@ def circle(size, centre=0, boundary=128):
   figure = plt.gcf()  # get current figure
   figure.set_size_inches(16, 12)
 
+  plt.savefig('problem1b.png')
   plt.show()  # comment this line and uncomment next to save image
   # plt.savefig('problem1bOp.png', bbox_inches='tight')# change this to problem1bOp.png
 

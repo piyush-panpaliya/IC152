@@ -2,7 +2,7 @@ import sys
 
 
 def read(file):
-  targer = None
+  target = None
   if file.count('.txt') != 1:
     file = f'{file}.txt'
   with open(file, 'r') as f:

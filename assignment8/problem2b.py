@@ -2,7 +2,7 @@ import sys
 
 
 def read(file):
-  targer = None
+  target = None
   if file.count('.txt') != 1:
     file = f'{file}.txt'
   with open(file, 'r') as f:
@@ -22,7 +22,7 @@ def check(target, listToCheck):
 
 def main():
   if (len(sys.argv) != 2):
-    print("Usage: python3 problem2a.py <file name>")
+    print("Usage: python3 problem2b.py <file name>")
     sys.exit(1)
   target, listToCheck = read(sys.argv[1:][0])
   print(check(target, listToCheck))
