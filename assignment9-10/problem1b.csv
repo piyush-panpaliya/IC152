@@ -1,7 +1,7 @@
-,Unnamed: 0,Manufacturer,Model,Type,Min.Price,Price,Max.Price,MPG.city,MPG.highway,AirBags,DriveTrain,Cylinders,EngineSize,Horsepower,RPM,Rev.per.mile,Man.trans.avail,Fuel.tank.capacity,Passengers,Length,Wheelbase,Width,Turn.circle,Rear.seat.room,Luggage.room,Weight,Origin,Make
-57,58,Mercedes-Benz,190E,Compact,29.0,31.9,34.9,20,29,Driver only,Rear,4,2.3,130,5100,2425,Yes,14.5,5,175,105,67,34,26.0,12.0,2920,non-USA,Mercedes-Benz 190E
-51,52,Lincoln,Town_Car,Large,34.4,36.1,37.8,18,26,Driver & Passenger,Rear,8,4.6,210,4600,1840,No,20.0,6,219,117,77,45,31.5,22.0,4055,USA,Lincoln Town_Car
-58,59,Mercedes-Benz,300E,Midsize,43.8,61.9,80.0,19,25,Driver & Passenger,Rear,6,3.2,217,5500,2220,No,18.5,5,187,110,69,37,27.0,15.0,3525,non-USA,Mercedes-Benz 300E
-0,1,Acura,Integra,Small,12.9,15.9,18.8,25,31,,Front,4,1.8,140,6300,2890,Yes,13.2,5,177,102,68,37,26.5,11.0,2705,non-USA,Acura Integra
-18,19,Chevrolet,Corvette,Sporty,34.6,38.0,41.5,17,25,Driver only,Rear,8,5.7,300,5000,1450,Yes,20.0,2,179,96,74,43,,,3380,USA,Chevrolet Corvette
-86,87,Toyota,Previa,Van,18.9,22.7,26.6,18,22,Driver only,4WD,4,2.4,138,5000,2515,Yes,19.8,7,187,113,71,41,35.0,,3785,non-USA,Toyota Previa
+,Manufacturer,Model,Type,Min.Price,Price,Max.Price,MPG.city,MPG.highway,AirBags,DriveTrain,Cylinders,EngineSize,Horsepower,RPM,Rev.per.mile,Man.trans.avail,Fuel.tank.capacity,Passengers,Length,Wheelbase,Width,Turn.circle,Rear.seat.room,Luggage.room,Weight,Origin,Make
+58,Mercedes-Benz,190E,Compact,29.0,31.9,34.9,20,29,Driver only,Rear,4,2.3,130,5100,2425,Yes,14.5,5,175,105,67,34,26.0,12.0,2920,non-USA,Mercedes-Benz 190E
+52,Lincoln,Town_Car,Large,34.4,36.1,37.8,18,26,Driver & Passenger,Rear,8,4.6,210,4600,1840,No,20.0,6,219,117,77,45,31.5,22.0,4055,USA,Lincoln Town_Car
+59,Mercedes-Benz,300E,Midsize,43.8,61.9,80.0,19,25,Driver & Passenger,Rear,6,3.2,217,5500,2220,No,18.5,5,187,110,69,37,27.0,15.0,3525,non-USA,Mercedes-Benz 300E
+1,Acura,Integra,Small,12.9,15.9,18.8,25,31,,Front,4,1.8,140,6300,2890,Yes,13.2,5,177,102,68,37,26.5,11.0,2705,non-USA,Acura Integra
+19,Chevrolet,Corvette,Sporty,34.6,38.0,41.5,17,25,Driver only,Rear,8,5.7,300,5000,1450,Yes,20.0,2,179,96,74,43,,,3380,USA,Chevrolet Corvette
+87,Toyota,Previa,Van,18.9,22.7,26.6,18,22,Driver only,4WD,4,2.4,138,5000,2515,Yes,19.8,7,187,113,71,41,35.0,,3785,non-USA,Toyota Previa
