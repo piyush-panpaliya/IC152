@@ -7,8 +7,7 @@ class IC152:
       self.roll = roll
     if marks.isdigit() and int(marks) >= 0 and int(marks) <= 100:
       self.marks = marks
-    if name.isalpha():
-      self.name = name
+    self.name = name
 
   def check(self):
     if self.name == None or self.roll == None or self.marks == None:
